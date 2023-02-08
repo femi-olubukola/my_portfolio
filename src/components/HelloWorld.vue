@@ -2,10 +2,14 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
+
+        <div class="tw-caret-blue-500 text-uppercase">
+          Meet
+        </div>
+
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/02.svg')"
           class="my-3"
-          contain
           height="200"
         />
       </v-col>
