@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container style="height: 5000px">
     <v-row class="text-center">
       <v-col cols="12">
 
-        <div class="tw-caret-blue-500 text-uppercase">
+        <div class="meet tw-font-bold text-uppercase" style="color: ivory; font-size: large">
           Meet
         </div>
 
@@ -153,3 +153,13 @@
     }),
   }
 </script>
+
+<style>
+.meet {
+  /*position: absolute;*/
+  /*top: 10%;*/
+  /*bottom: 90%;*/
+  z-index: 2;
+
+}
+</style>

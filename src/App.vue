@@ -1,9 +1,13 @@
 <template>
-  <v-app>
+  <v-app class="overflow-hidden">
     <v-app-bar
+      absolute
       app
-      color="primary"
+      color="orange darken-3"
       dark
+      :collapse="!collapseOnScroll"
+      :collapse-on-scroll="collapseOnScroll"
+      scroll-target="#scrolling-techniques-6"
     >
       <div class="d-flex align-center">
         <v-img
@@ -32,14 +36,22 @@
         text
         depressed
       >
-        <span class="mr-2">Resume</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mt-1">
+        <v-icon class="mr-2 mb-2">mdi-file-document</v-icon>
+          Resume</span>
       </v-btn>
     </v-app-bar>
+
+    <v-sheet
+        id="scrolling-techniques-6"
+        class="overflow-y-auto"
+        max-height="2000"
+    >
 
     <v-main>
       <router-view/>
     </v-main>
+    </v-sheet>
   </v-app>
 </template>
 
@@ -50,7 +62,8 @@ export default {
 
   data: () => ({
     //
-    logo: require('@/assets/04.svg'),
+    logo: require('@/assets/05.svg'),
+    collapseOnScroll: true,
   }),
 };
 </script>
