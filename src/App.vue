@@ -10,36 +10,36 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          :src="logo"
           transition="scale-transition"
           width="40"
         />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+<!--        <v-img-->
+<!--          alt="Vuetify Name"-->
+<!--          class="shrink mt-1 hidden-sm-and-down"-->
+<!--          contain-->
+<!--          min-width="100"-->
+<!--          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"-->
+<!--          width="100"-->
+<!--        />-->
       </div>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        href=""
         text
+        depressed
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">Resume</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
-<!--    <v-main>-->
-<!--      <router-view/>-->
-<!--    </v-main>-->
+    <v-main>
+      <router-view/>
+    </v-main>
   </v-app>
 </template>
 
@@ -50,6 +50,13 @@ export default {
 
   data: () => ({
     //
+    logo: require('@/assets/04.svg'),
   }),
 };
 </script>
+
+<style>
+v-btn {
+  border-radius: 20px;
+}
+</style>
