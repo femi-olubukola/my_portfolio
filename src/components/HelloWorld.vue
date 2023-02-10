@@ -3,19 +3,19 @@
     <v-row class="text-center tw-my-10">
       <v-col cols="12">
 
-        <div class="meet tw-font-bold text-uppercase" style="color: ivory; font-size: large">
+        <div class="meet tw-font-bold text-uppercase animate__animated animate__rubberBand animate__delay-1s" style="color: ivory; font-size: large">
           Meet
         </div>
 
         <v-img
             :src="require('../assets/02.svg')"
-            class="my-3"
+            class="my-3 animate__animated animate__fadeInDownBig animate__delay-2s"
             height="200"
         />
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-1 font-weight-bold mb-3 text--disabled">
+        <h1 class="display-1 font-weight-bold mb-3 text--disabled animate__animated animate__backInUp animate__delay-3s">
           A driven enthusiast software development techie.
         </h1>
 
@@ -96,6 +96,7 @@
 </template>
 
 <script>
+import 'animate.css';
 export default {
   name: 'HelloWorld',
 
