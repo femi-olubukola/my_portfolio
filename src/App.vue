@@ -12,7 +12,7 @@
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
-          class="shrink mr-2"
+          class="shrink mr-2 animate__animated animate__bounce"
           contain
           :src="logo"
           transition="scale-transition"
@@ -56,7 +56,7 @@
 </template>
 
 <script>
-
+import 'animate.css';
 export default {
   name: 'App',
 
