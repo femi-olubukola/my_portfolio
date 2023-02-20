@@ -15,8 +15,8 @@
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-1 font-weight-bold mb-3 text--disabled animate__animated animate__backInUp animate__delay-3s">
-          A driven enthusiast software development techie.
+        <h1 class="display-1 font-weight-medium mb-3 text--disabled animate__animated animate__backInUp animate__delay-3s">
+          A driven enthusiastic software development techie. I am self driven to find myself loving how to do OOP and solve problems.
         </h1>
 
         <!--        <p class="subheading font-weight-regular">-->
